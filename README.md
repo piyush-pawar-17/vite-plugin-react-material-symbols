@@ -2,6 +2,19 @@
 
 A Vite plugin that automatically discovers Material Symbols Icons usage in React files and injects an optimized Google Fonts stylesheet with only the icons used in your application.
 
+## Installation
+
+```bash
+# Using npm
+npm install --save-dev @piyushpawar/vite-plugin-react-material-symbols
+
+# Using yarn
+yarn add -D @piyushpawar/vite-plugin-react-material-symbols
+
+# Using pnpm
+pnpm add -D @piyushpawar/vite-plugin-react-material-symbols
+```
+
 ## Features
 
 - 🚀 **Automatic Discovery**: Scans React files (TSX, JSX, JS) for Material Symbols usage
@@ -17,7 +30,7 @@ A Vite plugin that automatically discovers Material Symbols Icons usage in React
 ```ts
 // vite.config.ts
 import { defineConfig } from 'vite';
-import vitePluginReactMaterialSymbols from 'vite-plugin-react-material-symbols';
+import vitePluginReactMaterialSymbols from '@piyushpawar/vite-plugin-react-material-symbols';
 
 export default defineConfig({
     plugins: [
@@ -34,7 +47,7 @@ export default defineConfig({
 ```ts
 // vite.config.ts
 import { defineConfig } from 'vite';
-import vitePluginReactMaterialSymbols from 'vite-plugin-react-material-symbols';
+import vitePluginReactMaterialSymbols from '@piyushpawar/vite-plugin-react-material-symbols';
 
 export default defineConfig({
     plugins: [
@@ -106,6 +119,8 @@ The plugin also detects icons passed through component props. You can customize 
 
 ```ts
 // vite.config.ts
+import vitePluginReactMaterialSymbols from '@piyushpawar/vite-plugin-react-material-symbols';
+
 vitePluginReactMaterialSymbols({
     variant: 'rounded',
     paths: ['src'],
@@ -128,6 +143,9 @@ For a basic React application using Material Symbols:
 
 ```ts
 // vite.config.ts
+import { defineConfig } from 'vite';
+import vitePluginReactMaterialSymbols from '@piyushpawar/vite-plugin-react-material-symbols';
+
 export default defineConfig({
     plugins: [
         vitePluginReactMaterialSymbols({
@@ -144,6 +162,9 @@ When building a component library with icons in multiple directories:
 
 ```ts
 // vite.config.ts
+import { defineConfig } from 'vite';
+import vitePluginReactMaterialSymbols from '@piyushpawar/vite-plugin-react-material-symbols';
+
 export default defineConfig({
     plugins: [
         vitePluginReactMaterialSymbols({
@@ -164,6 +185,9 @@ For applications that render icons dynamically:
 
 ```ts
 // vite.config.ts
+import { defineConfig } from 'vite';
+import vitePluginReactMaterialSymbols from '@piyushpawar/vite-plugin-react-material-symbols';
+
 export default defineConfig({
     plugins: [
         vitePluginReactMaterialSymbols({
@@ -183,6 +207,9 @@ If you use different Material Symbols variants in different parts of your app:
 
 ```ts
 // vite.config.ts
+import { defineConfig } from 'vite';
+import vitePluginReactMaterialSymbols from '@piyushpawar/vite-plugin-react-material-symbols';
+
 export default defineConfig({
     plugins: [
         // Configure for rounded icons in main app
