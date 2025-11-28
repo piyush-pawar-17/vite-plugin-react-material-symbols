@@ -2,8 +2,10 @@
     "name": "@piyushpawar/vite-plugin-react-material-symbols",
     "version": "0.1.0",
     "description": "Vite plugin to discover material symbols from react project and inject a Google Fonts stylesheet link with only the icons used in the application.",
-    "type": "module",
-    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/piyush-pawar-17/vite-plugin-react-material-symbols.git"
+    },
     "main": "./dist/index.js",
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -17,6 +19,7 @@
     "files": [
         "dist"
     ],
+    "type": "module",
     "scripts": {
         "build": "tsup",
         "format": "prettier --write \"**/*.{ts,js}\"",
@@ -52,5 +55,6 @@
         "react",
         "material-symbols-icons"
     ],
+    "license": "MIT",
     "packageManager": "pnpm@10.13.1"
 }
