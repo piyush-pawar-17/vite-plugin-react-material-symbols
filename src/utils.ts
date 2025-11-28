@@ -261,12 +261,12 @@ export async function processReactFile(
 
         traverse(ast, {
             JSXElement(path) {
-                /* Handle className attribute with material-symbols-rounded class */
                 const classNameAttribute = path.node.openingElement.attributes.find(
                     (attr) => attr.type === 'JSXAttribute' && attr.name && attr.name.name === 'className'
                 );
 
                 if (classNameAttribute?.type === 'JSXAttribute') {
+                    /* Handle className attribute with material-symbols-* classes */
                     if (hasMaterialSymbolsClass(classNameAttribute.value, variantToClassNameMap[variant])) {
                         extractIconsFromChildren(path.node.children, icons);
                     }
