@@ -1,0 +1,56 @@
+{
+    "name": "@piyushpawar/vite-plugin-react-material-symbols",
+    "version": "0.1.0",
+    "description": "Vite plugin to discover material symbols from react project and inject a Google Fonts stylesheet link with only the icons used in the application.",
+    "type": "module",
+    "license": "MIT",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "format": "prettier --write \"**/*.{ts,js}\"",
+        "lint": "eslint",
+        "lint:fix": "eslint --fix"
+    },
+    "peerDependencies": {
+        "vite": "^6.0.0 || ^7.0.0"
+    },
+    "devDependencies": {
+        "@babel/types": "^7.28.5",
+        "@eslint/js": "^9.39.1",
+        "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
+        "@types/babel__traverse": "^7.28.0",
+        "@types/node": "^24.10.1",
+        "eslint": "^9.39.1",
+        "eslint-config-prettier": "^10.1.8",
+        "globals": "^16.5.0",
+        "prettier": "^3.7.1",
+        "tsup": "^8.5.1",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.48.0",
+        "vite": "^7.2.4"
+    },
+    "dependencies": {
+        "@babel/parser": "^7.28.5",
+        "@babel/traverse": "^7.28.5",
+        "linkedom": "^0.18.12"
+    },
+    "keywords": [
+        "vite",
+        "vite-plugin",
+        "react",
+        "material-symbols-icons"
+    ],
+    "packageManager": "pnpm@10.13.1"
+}

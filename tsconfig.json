@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "target": "ESNext",
+        "lib": ["ES2022", "DOM", "DOM.Iterable"],
+        "module": "ESNext",
+        "types": ["vite/client"],
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "verbatimModuleSyntax": true,
+        "moduleDetection": "force",
+        "noEmit": true,
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "erasableSyntaxOnly": true,
+        "noUncheckedSideEffectImports": true,
+        "exactOptionalPropertyTypes": true,
+        "declaration": true,
+        "declarationMap": true
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+}
