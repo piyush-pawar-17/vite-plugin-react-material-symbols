@@ -1,6 +1,6 @@
 # Vite Plugin React Material Symbols
 
-A Vite plugin that automatically discovers Material Symbols icon usage in React files and injects an optimized Google Fonts stylesheet with only the icons used in your application.
+A Vite plugin that automatically discovers Material Symbols Icons usage in React files and injects an optimized Google Fonts stylesheet with only the icons used in your application.
 
 ## Features
 

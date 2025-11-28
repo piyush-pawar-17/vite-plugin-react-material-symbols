@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  vite-plugin-react-material-symbols: link:../../../.local/share/pnpm/global/5/node_modules/vite-plugin-react-material-symbols
-
 importers:
 
   .:
@@ -20,9 +17,6 @@ importers:
       linkedom:
         specifier: ^0.18.12
         version: 0.18.12
-      vite-plugin-react-material-symbols:
-        specifier: link:../../../.local/share/pnpm/global/5/node_modules/vite-plugin-react-material-symbols
-        version: link:../../../.local/share/pnpm/global/5/node_modules/vite-plugin-react-material-symbols
     devDependencies:
       '@babel/types':
         specifier: ^7.28.5
