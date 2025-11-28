@@ -1,2 +1,0 @@
-overrides:
-  vite-plugin-react-material-symbols: link:../../../.local/share/pnpm/global/5/node_modules/vite-plugin-react-material-symbols
